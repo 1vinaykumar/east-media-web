@@ -5,11 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
   },
   "dependencies": {
+    "@openfonts/lakki-reddy_telugu": "^1.44.2",
+    "@openfonts/ramaraja_telugu": "^1.44.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta1",
     "next": "10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "purgecss": "^3.1.3"
   }
 }

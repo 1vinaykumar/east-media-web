@@ -1,0 +1,105 @@
+body {
+  height: 100vh;
+  background-color: #121212;
+}
+
+.lak {
+  font-family: "Lakki Reddy", sans-serif;
+}
+
+.ram {
+  font-family: "Ramaraja", sans-serif;
+}
+
+@keyframes carouselAnimationNext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.carousel-inner .next {
+  animation-name: carouselAnimationNext;
+  animation-duration: 1000ms;
+}
+
+@keyframes carouselAnimationPrev {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.carousel-inner .prev {
+  animation-name: carouselAnimationPrev;
+  animation-duration: 1000ms;
+}
+
+@keyframes navBarAnimationStart {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.nav-animation-start {
+  animation-name: navBarAnimationStart;
+  animation-duration: 1000ms;
+}
+
+.c-cap {
+  border-radius: 1rem;
+  width: fit-content;
+  background-color: #000000cc;
+}
+
+.tv-card {
+  background: linear-gradient(to right bottom, #2257e9, #121212);
+  border-radius: 1.5rem;
+}
+
+/* background-color: #6200ee; */
+
+.a-card {
+  height: 360px;
+}
+
+.a-card img {
+  object-fit: cover;
+}
+
+@keyframes atAnimation {
+  0% {
+    transform: scale(0.2, 0.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.at-card {
+  animation: atAnimation 1000ms;
+}
+
+.at-card:hover {
+  transform: scale(1.1, 1.05);
+}
+
+@keyframes bannerAnimation {
+  0% {
+    transform: scale(0.2, 0.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.banner {
+  animation: bannerAnimation 2s infinite;
+}
