@@ -1,6 +1,4 @@
-import { useContext } from "react";
 import Link from "next/link";
-import { stateContext } from "../../state/store";
 import Image from "next/image";
 
 function Navbar() {

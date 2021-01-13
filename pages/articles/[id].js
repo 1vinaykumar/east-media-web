@@ -1,19 +1,14 @@
 import axios from "axios";
 import ArticleDetails from "../../src/components/news/ArticleDetails";
-import Navbar from "../../src/components/navs/Navbar";
-import Footer from "../../src/components/navs/Footer";
 
 function Id({ article, id }) {
   return (
     <>
-      <Navbar />
-
       {article ? (
         <ArticleDetails articleData={article} id={id} />
       ) : (
         <h1>Not Found</h1>
       )}
-      <Footer />
     </>
   );
 }

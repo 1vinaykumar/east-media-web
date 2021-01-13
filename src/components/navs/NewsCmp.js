@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { stateContext } from "../../state/store";
 import ArticleTemplate from "../news/ArticleTemplate";
-import Banner from "../utils/Banner";
 import { useGetArticles } from "../utils/customHooks";
 import Spinner from "../utils/Spinner";
 

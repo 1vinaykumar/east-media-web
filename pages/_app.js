@@ -4,9 +4,10 @@ import { setInitialState } from "../src/state/actions";
 import { reducer } from "../src/state/reducer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/styles/customStyles.css";
-
 import "@openfonts/lakki-reddy_telugu/index.css";
 import "@openfonts/ramaraja_telugu/index.css";
+import Navbar from "../src/components/navs/Navbar";
+import Footer from "../src/components/navs/Footer";
 
 function MyApp({ Component, pageProps }) {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -36,7 +37,9 @@ function MyApp({ Component, pageProps }) {
   }, [state.theme]);
   return (
     <stateContext.Provider value={{ state, dispatch }}>
+      <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </stateContext.Provider>
   );
 }
